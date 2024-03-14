@@ -8,10 +8,10 @@ export const Navbar = () => {
           <h2>LOGO</h2>
         </div>
         <ul>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projetos</a></li>
-          <li><a href="">Contato</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contacts">Contato</a></li>
         </ul>
 
       </nav>
