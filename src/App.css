@@ -9,7 +9,8 @@
 
 :root{
   font-size: 62.5%;
-  --background-color: #141625;
+  --background-color: #060817;
+  --project-card-color: #151726;
   --title-icon-color: #3d457e;
   --outside-title-color: #292040;
   --inside-title-color: #bb84e8;
