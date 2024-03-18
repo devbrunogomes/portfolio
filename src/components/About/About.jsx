@@ -8,12 +8,12 @@ export const About = (props) => {
         <div className={styles.titlesWrapper}>
           <h1>BRUNO</h1>
           <h2>GOMES</h2>
+          <hr />
           <h3>DEV FRONTEND</h3>
         </div>
         <div className={styles.imagem}>
-          <img  src={fotoPerfil} alt="" />
+          <img src={fotoPerfil} alt="" />
         </div>
-        
       </div>
       <div className={styles.apresentation}>
         <p>
@@ -27,6 +27,7 @@ export const About = (props) => {
           contribuindo de forma ativa, ao passo que aprimoro meus conhecimentos
           de acordo com as experiências práticas.
         </p>
+        
       </div>
     </section>
   );

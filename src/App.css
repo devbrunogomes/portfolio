@@ -10,6 +10,7 @@
 :root{
   font-size: 62.5%;
   --background-color: #141625;
+  --title-icon-color: #3d457e;
   --outside-title-color: #292040;
   --inside-title-color: #bb84e8;
   --content-font-color: #DEE1E6;

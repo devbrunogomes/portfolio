@@ -11,9 +11,9 @@ function App() {
     <main>
       <Navbar/>
       <About id="about"/>
-      {/* <Skills id="skills"/>
+      <Skills id="skills"/>
       <Projects id="projects"/>
-      <Contacts id="contacts"/> */}
+      {/* <Contacts id="contacts"/> */}
     </main>
   );
 }
