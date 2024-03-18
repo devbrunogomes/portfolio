@@ -13,6 +13,9 @@ export const Projects = (props) => {
         <h1>PROJECTS</h1>
       </div>
       <ProjectCard/>
+      <ProjectCard/>
+      <ProjectCard/>
+      <ProjectCard/>
     </section>
   );
 };
