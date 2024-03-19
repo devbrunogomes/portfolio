@@ -30,7 +30,7 @@
       }
     }
 
-    .iconTitle * {      
+    .iconTitle * {
       font-size: 8rem;
       color: var(--title-icon-color);
 
@@ -66,19 +66,200 @@
         gap: 2rem;
       }
 
-      
+      .htmlLogo{        
+        position: relative;
+        overflow: hidden;
 
-      & > * {
-        font-size: 8rem;
+        &:hover::before {
+          transform: translate(0%);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .htmlLogo::before {
+        content: "HTML5";
+        background-color: var(--background-color);
+        font-family: var(--body-font-family);
+        font-size: 2.5rem;
+        // border: 0.1rem solid var(--title-font-color);
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        top: 0%;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .cssLogo{        
+        position: relative;
+        overflow: hidden;
+
+        &:hover::before {
+          transform: translate(0%);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .cssLogo::before {
+        content: "CSS";
+        background-color: var(--background-color);
+        font-family: var(--body-font-family);
+        font-size: 2.5rem;
+        // border: 0.1rem solid var(--title-font-color);
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        top: 0%;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .jsLogo{        
+        position: relative;
+        overflow: hidden;
+
+        &:hover::before {
+          transform: translate(0%);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .jsLogo::before {
+        content: "Javascript";
+        background-color: var(--background-color);
+        font-family: var(--body-font-family);
+        font-size: 1.9rem;
+        // border: 0.1rem solid var(--title-font-color);
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        top: 0%;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .tsLogo{        
+        position: relative;
+        overflow: hidden;
+
+        &:hover::before {
+          transform: translate(0%);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .tsLogo::before {
+        content: "Typescript";
+        background-color: var(--background-color);
+        font-family: var(--body-font-family);
+        font-size: 1.9rem;
+        // border: 0.1rem solid var(--title-font-color);
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        top: 0%;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .reactLogo{        
+        position: relative;
+        overflow: hidden;
+
+        &:hover::before {
+          transform: translate(0%);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .reactLogo::before {
+        content: "React";
+        background-color: var(--background-color);
+        font-family: var(--body-font-family);
+        font-size: 2.5rem;
+        // border: 0.1rem solid var(--title-font-color);
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        top: 0%;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .gitLogo{        
+        position: relative;
+        overflow: hidden;
+
+        &:hover::before {
+          transform: translate(0%);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+
+      .gitLogo::before {
+        content: "Git";
+        background-color: var(--background-color);
+        font-family: var(--body-font-family);
+        font-size: 2.5rem;
+        // border: 0.1rem solid var(--title-font-color);
+        border-radius: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100%);
+        top: 0%;
+        left: 0;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      div {
         border: 0.1rem solid var(--title-font-color);
         border-radius: 5px;
         padding: 1rem;
-        color: var(--title-font-color);
-
-        @media screen and (max-width: 800px) {
-          font-size: 6rem;
+        font-size: 8rem;  
+        display: flex;
+        align-items: center;
+        justify-content: center;        
+        
+        
+        & > *{
+          color: var(--title-font-color);
+          
+  
+          @media screen and (max-width: 800px) {
+            font-size: 6rem;
+          }
         }
       }
+
     }
   }
 }

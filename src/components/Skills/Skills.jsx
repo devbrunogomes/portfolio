@@ -17,7 +17,24 @@ export const Skills = (props) => {
 
       <div className={styles.iconsWrapper}>
         <div className={styles.icons}>
-          <FaHtml5 /> <FaCss3Alt /> <IoLogoJavascript /> <SiTypescript /> <FaReact /> <FaGitAlt />
+          <div className={styles.htmlLogo}>
+            <FaHtml5 />
+          </div>
+          <div className={styles.cssLogo}>
+            <FaCss3Alt />
+          </div>
+          <div className={styles.jsLogo}>
+            <IoLogoJavascript />
+          </div>
+          <div className={styles.tsLogo}>
+            <SiTypescript />
+          </div>
+          <div className={styles.reactLogo}>
+            <FaReact />
+          </div>
+          <div className={styles.gitLogo}>
+            <FaGitAlt />
+          </div>
         </div>
       </div>
     </section>

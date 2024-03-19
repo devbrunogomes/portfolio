@@ -27,8 +27,8 @@ export const ProjectCard = (props) => {
             </div>
 
             <div className={styles.links}>
-              <a href={props.site} target="_blank">
-                Visit Site
+              <a href={props.site} target="_blank" id={styles.visitSite}>
+                 <span>Visit Site</span>
               </a>
               <a href={props.github} target="_blank">
                 Go To GitHub

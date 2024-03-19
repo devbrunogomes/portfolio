@@ -4,8 +4,6 @@ import { BsFileEarmarkPerson } from "react-icons/bs";
 
 import { GrDocumentDownload } from "react-icons/gr";
 
-
-
 export const About = (props) => {
   return (
     <section id={props.id} className={styles.container}>
@@ -15,12 +13,21 @@ export const About = (props) => {
           <h2>GOMES</h2>
           <hr />
           <h3>DEV FRONTEND</h3>
-          <a href="https://drive.google.com/file/d/1ciCbSlOgc_f0q03QHVxMVs7BT8rl12Y_/view?usp=sharing" target="_blank">
-            Curriculo <GrDocumentDownload />
+          <div className={styles.downloadCV}>
+            <a
+            
+            href="https://drive.google.com/file/d/1ciCbSlOgc_f0q03QHVxMVs7BT8rl12Y_/view?usp=sharing"
+            target="_blank"
+          >
+            <span>
+              Curriculo <GrDocumentDownload />
+            </span>
           </a>
+          </div>
+          
         </div>
         <div className={styles.imagem}>
-          <img src={fotoPerfil} alt="" loading="lazy"/>
+          <img src={fotoPerfil} alt="" loading="lazy" />
         </div>
       </div>
       <div className={styles.apresentation}>

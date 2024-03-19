@@ -62,20 +62,62 @@
         }
       }
 
-      a {        
+      .downloadCV {
         text-decoration: none;
         color: var(--title-font-color);
-        font-family: var(--body-font-family);
+        font-family: var(--body-font-family);        
         font-size: 1.8rem;
         font-weight: 200;
         border: 0.1rem solid var(--title-font-color);
-        border-radius: 20px 5px 20px 5px;
+        border-radius: 2rem 0.5rem 2rem 0.5rem;
+        max-width: 35%;
         padding: 0.7rem 2rem;
         text-align: center;
-       
+        position: relative;
+        overflow: hidden;
+        transition: transform 1s ease-in-out;
 
-        svg *{
-          color: var(--title-font-color);               
+        // &:hover * {
+        //   color: var(--content-font-color);
+        // }
+
+        &:hover::before {
+          transform: translate(0%);
+          transition: transform 0.2s ease-in-out;
+        }
+
+        &::before {
+          background-color: var(--inside-title-color);
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          border-radius: inherit;
+          top: 0;
+          left: 0;
+          transform: translate(-100%, -100%);
+          transition: transform 0.2s ease-in-out;
+          z-index: 0;
+        }
+
+        svg * {
+          color: var(--title-font-color);
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        span {
+          
+          background-color: none;
+          position: relative;
+          z-index: 9999;          
+          color: var(--title-font-color);
+          
+          & > * {
+            color: var(--title-font-color);
+          }
         }
       }
     }
@@ -104,7 +146,7 @@
 
   .apresentation {
     max-width: 1240px;
-    
+
     display: flex;
     align-items: center;
     justify-content: space-evenly;
