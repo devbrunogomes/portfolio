@@ -20,7 +20,7 @@ export const About = (props) => {
           </a>
         </div>
         <div className={styles.imagem}>
-          <img src={fotoPerfil} alt="" />
+          <img src={fotoPerfil} alt="" loading="lazy"/>
         </div>
       </div>
       <div className={styles.apresentation}>
