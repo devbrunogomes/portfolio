@@ -17,13 +17,13 @@ export const Contacts = (props) => {
         <h1>LET'S WORK TOGETHER</h1>
 
         <div className={styles.socialLinks}>
-          <a href="http://" target="_blank">
+          <a href="https://www.linkedin.com/in/bruno-gomes-bsg97/" target="_blank">
             <FaLinkedin />
           </a>
-          <a href="http://" target="_blank">
+          <a href="https://github.com/devbrunogomes" target="_blank">
             <FaGithub />
           </a>
-          <a href="http://" target="_blank">
+          <a href="https://wa.me/5571999382109" target="_blank">
             <FaWhatsapp />
           </a>
         </div>

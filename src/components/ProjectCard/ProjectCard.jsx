@@ -2,8 +2,6 @@ import styles from "./styles.module.scss";
 import project1 from "../../assets/project1.png"
 
 export const ProjectCard = (props) => {
-  console.log(props.image)
-
   return (
     <article className={styles.container}>
       <div className={props.reverse ? `${styles.reverse} ${styles.contentTextImgWrapper}` : `${styles.contentTextImgWrapper}`}>

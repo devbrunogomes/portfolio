@@ -1,5 +1,10 @@
 import styles from "./styles.module.scss";
 import fotoPerfil from "../../assets/foto-perfil.jpeg";
+import { BsFileEarmarkPerson } from "react-icons/bs";
+
+import { GrDocumentDownload } from "react-icons/gr";
+
+
 
 export const About = (props) => {
   return (
@@ -10,12 +15,19 @@ export const About = (props) => {
           <h2>GOMES</h2>
           <hr />
           <h3>DEV FRONTEND</h3>
+          <a href="https://drive.google.com/file/d/1ciCbSlOgc_f0q03QHVxMVs7BT8rl12Y_/view?usp=sharing" target="_blank">
+            Curriculo <GrDocumentDownload />
+          </a>
         </div>
         <div className={styles.imagem}>
           <img src={fotoPerfil} alt="" />
         </div>
       </div>
       <div className={styles.apresentation}>
+        <div className={styles.iconTitle}>
+          <BsFileEarmarkPerson />
+        </div>
+
         <p>
           {" "}
           <span>Olá,</span>
@@ -27,7 +39,6 @@ export const About = (props) => {
           contribuindo de forma ativa, ao passo que aprimoro meus conhecimentos
           de acordo com as experiências práticas.
         </p>
-        
       </div>
     </section>
   );
