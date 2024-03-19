@@ -2,30 +2,32 @@ import styles from "./styles.module.scss";
 import project1 from "../../assets/project1.png"
 
 export const ProjectCard = (props) => {
+  console.log(props.image)
+
   return (
     <article className={styles.container}>
-      <div className={`${styles.contentTextImgWrapper}`}>
+      <div className={props.reverse ? `${styles.reverse} ${styles.contentTextImgWrapper}` : `${styles.contentTextImgWrapper}`}>
         <div className={styles.contentTextWrapper}>
           <div className={styles.titleWrapper}>
-            <h1>01</h1>
-            <h2>OnFocus</h2>
+            <h1>{props.id < 10 ? `0${props.id}` : `${props.id}`}</h1>
+            <h2>{props.title}</h2>
           </div>
 
-          <p>As vezes manter o foco pode ser difícil, por isso, essa aplicação foi pensada para poder cronometrar o tempo que o usuário deve passar focado, e o tempo que deve descansar, pois a vida é um constante equilibrio, não é mesmo?</p>
+          <p>{props.description}</p>
 
           <div className={styles.stacks}>
             <h4>Stack:</h4>
-            <span>React, Vercel</span>
+            <span>{props.stack}</span>
           </div>
 
           <div className={styles.links}>
-            <a href="" target="_blank">Visit Site</a>
-            <a href="" target="_blank">Go To GitHub</a>
+            <a href={props.site} target="_blank">Visit Site</a>
+            <a href={props.github} target="_blank">Go To GitHub</a>
           </div>
         </div>
 
 
-        <img src={project1} alt="" />
+        <img src={props.image} alt="" />
       </div>
     </article>
   );
