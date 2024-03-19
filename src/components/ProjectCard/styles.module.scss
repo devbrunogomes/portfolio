@@ -122,11 +122,17 @@
             color: var(--inside-title-color);
             font-size: 1.3rem;
             font-weight: 200;
+            transition: 0.2s ease-in-out;
 
             &:first-of-type {
               border: 0.1rem solid var(--inside-title-color);
               border-radius: 5px;
               padding: 0.7rem 2rem;
+
+              // &:hover{
+              //   background-color: var(--inside-title-color);
+              //   color: var(--content-font-color);
+              // }
             }
           }
         }
