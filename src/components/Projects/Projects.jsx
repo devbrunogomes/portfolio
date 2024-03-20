@@ -15,7 +15,7 @@ export const Projects = (props) => {
       </div>
       {projectData.map((project) => {
         return (
-          <ProjectCard
+          <ProjectCard 
             key={project.id}
             id={project.id}
             title={project.title}
@@ -25,6 +25,7 @@ export const Projects = (props) => {
             site={project.site}
             github={project.github}
             reverse={project.reverse}
+            
           />
         )
       })}
