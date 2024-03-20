@@ -2,7 +2,9 @@ import styles from "./styles.module.scss";
 import { GiEnergyArrow } from "react-icons/gi";
 import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiTypescript } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+
 
 export const Skills = (props) => {
   return (
@@ -27,10 +29,13 @@ export const Skills = (props) => {
             <IoLogoJavascript />
           </div>
           <div className={styles.tsLogo}>
-            <SiTypescript />
+            <BiLogoTypescript />
           </div>
           <div className={styles.reactLogo}>
             <FaReact />
+          </div>
+          <div className={styles.reduxLogo}>
+            <SiRedux />
           </div>
           <div className={styles.gitLogo}>
             <FaGitAlt />

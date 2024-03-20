@@ -7,7 +7,12 @@ import { GrDocumentDownload } from "react-icons/gr";
 export const About = (props) => {
   return (
     <section id={props.id} className={styles.container}>
-      <div className={styles.nameLogoWrapper}>
+      <div className={styles.start}>
+        <div>
+          <a href="#aboutInfo">START</a>
+        </div>
+      </div>
+      <div className={styles.nameLogoWrapper} id="aboutInfo">
         <div className={styles.titlesWrapper}>
           <h1>BRUNO</h1>
           <h2>GOMES</h2>
@@ -15,16 +20,14 @@ export const About = (props) => {
           <h3>DEV FRONTEND</h3>
           <div className={styles.downloadCV}>
             <a
-            
-            href="https://drive.google.com/file/d/1ciCbSlOgc_f0q03QHVxMVs7BT8rl12Y_/view?usp=sharing"
-            target="_blank"
-          >
-            <span>
-              Curriculo <GrDocumentDownload />
-            </span>
-          </a>
+              href="https://drive.google.com/file/d/1ciCbSlOgc_f0q03QHVxMVs7BT8rl12Y_/view?usp=sharing"
+              target="_blank"
+            >
+              <span>
+                Curriculo <GrDocumentDownload />
+              </span>
+            </a>
           </div>
-          
         </div>
         <div className={styles.imagem}>
           <img src={fotoPerfil} alt="" loading="lazy" />
