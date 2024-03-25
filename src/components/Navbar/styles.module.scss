@@ -39,6 +39,26 @@
       }
     }
 
+    div:nth-of-type(2) {
+      
+
+      button {
+        border: 0.1rem solid var(--inside-title-color);
+        border-radius: 5px;
+        padding: 0 0.5rem;   
+        margin-right: 1.5rem;     
+        color: var(--content-font-color);
+        font-family: var(--body-font-family);
+        background-color: var(--inside-title-color);
+        transition: filter 0.2s ease-in-out;
+
+        &:hover {
+          filter: brightness(120%);
+          transition: filter 0.2s ease-in-out;
+        }
+      }
+    }
+
     ul {
       display: flex;
       gap: 3rem;

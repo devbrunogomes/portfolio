@@ -6,9 +6,13 @@ import { Contacts } from './components/Contacts/Contacts';
 import { Navbar } from './components/Navbar/Navbar';
 import { Projects } from './components/Projects/Projects';
 import { Skills } from './components/Skills/Skills';
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
   return (
+    <Provider store={store}>
+
     <main>
       <Navbar/>
       <About id="about"/>
@@ -16,6 +20,7 @@ function App() {
       <Projects id="projects"/>
       <Contacts id="contacts"/>
     </main>
+    </Provider>
   );
 }
 
