@@ -1,12 +1,18 @@
 .container {
   // max-width: 1240px;
-  min-height: 200vh;
+  // min-height: 200vh;
   width: 100%;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url("../../assets/lines-about.svg");
   // background-attachment: fixed;
+  transition: 0.5s ease-in-out;  
+  
+
+  .displayNone {
+    display: none;
+  }
 
   .start {
     min-height: 100vh;
@@ -39,6 +45,10 @@
     }
   }
 
+  .containerAbout {
+    min-height: 100vh;
+  }
+
   .nameLogoWrapper {
     padding-top: 9rem;
     max-width: 1240px;
@@ -53,26 +63,25 @@
       margin-top: 1rem;
     }
 
-    .titlesWrapper {      
-
+    .titlesWrapper {
       //Animação
-      @media screen and (min-width: 1500px) {
-        animation: fly-in-a linear both;
-        animation-timeline: scroll(block);
-        animation-range: cover 0% cover 100%;
+      // @media screen and (min-width: 1500px) {
+      //   animation: fly-in-a linear both;
+      //   animation-timeline: scroll(block);
+      //   animation-range: cover 0% cover 100%;
 
-        @keyframes fly-in-a {
-          0% {
-            opacity: 0;
-            transform: translateX(-22rem);
-          }
+      //   @keyframes fly-in-a {
+      //     0% {
+      //       opacity: 0;
+      //       transform: translateX(-22rem);
+      //     }
 
-          20% {
-            opacity: 1;
-            transform: translateX(0);
-          }
-        }
-      }
+      //     20% {
+      //       opacity: 1;
+      //       transform: translateX(0);
+      //     }
+      //   }
+      // }
 
       //Responsividade
       @media screen and (max-width: 450px) {
@@ -142,11 +151,8 @@
         transition: transform 1s ease-in-out;
 
         @media screen and (max-width: 450px) {
-          
           max-width: 100%;
         }
-
-        
 
         &:hover::before {
           transform: translate(0%);
@@ -200,23 +206,23 @@
         filter: drop-shadow(0px 0px 15rem var(--inside-title-color));
       }
 
-      @media screen and (min-width: 1500px) {
-        animation: fly-in-b linear both;
-        animation-timeline: scroll(block);
-        animation-range: cover 0% cover 100%;
-      }
+      // @media screen and (min-width: 1500px) {
+      //   animation: fly-in-b linear both;
+      //   animation-timeline: scroll(block);
+      //   animation-range: cover 0% cover 100%;
+      // }
 
-      @keyframes fly-in-b {
-        0% {
-          opacity: 0;
-          transform: translateX(22rem);
-        }
+      // @keyframes fly-in-b {
+      //   0% {
+      //     opacity: 0;
+      //     transform: translateX(22rem);
+      //   }
 
-        20% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
+      //   20% {
+      //     opacity: 1;
+      //     transform: translateX(0);
+      //   }
+      // }
 
       @media screen and (min-width: 950px) {
         width: 40rem;

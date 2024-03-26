@@ -2,8 +2,12 @@ import { ProjectCard } from "../ProjectCard/ProjectCard";
 import styles from "./styles.module.scss";
 import { FaFileCode } from "react-icons/fa";
 import { projectData } from "../../data/projectData"
+import { useDispatch, useSelector } from "react-redux";
 
 export const Projects = (props) => {
+  const  language  = useSelector((rootReducer) => rootReducer.languageReducer.isEnglish);
+  const dispatch = useDispatch();
+
   return (
     <section id={props.id} className={styles.container}>
       <div className={styles.title}>

@@ -1,7 +1,11 @@
 import styles from "./styles.module.scss";
-import project1 from "../../assets/project1.png";
+import { useDispatch, useSelector } from "react-redux";
 
 export const ProjectCard = (props) => {
+  const  language  = useSelector((rootReducer) => rootReducer.languageReducer.isEnglish);
+  const dispatch = useDispatch();
+
+
   return (
     <article className={styles.card}>
       <div className={styles.border}></div>

@@ -4,9 +4,15 @@ import { FaHtml5, FaCss3Alt, FaReact, FaGitAlt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiRedux } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleLanguage } from "../../redux/LanguageReducer/languageSlice";
 
 
 export const Skills = (props) => {
+  const  language  = useSelector((rootReducer) => rootReducer.languageReducer.isEnglish);
+  const dispatch = useDispatch();
+
+
   return (
     <section id={props.id} className={styles.container}>
       <div className={styles.title}>

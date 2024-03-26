@@ -1,8 +1,12 @@
 import styles from "./styles.module.scss";
 import { MdMarkUnreadChatAlt } from "react-icons/md";
 import { FaLinkedin, FaGithub, FaWhatsapp } from "react-icons/fa";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Contacts = (props) => {
+  const  language  = useSelector((rootReducer) => rootReducer.languageReducer.isEnglish);
+  const dispatch = useDispatch();
+
   return (
     <footer id={props.id} className={styles.container}>
       <div className={styles.title}>
@@ -14,7 +18,7 @@ export const Contacts = (props) => {
       </div>
 
       <div className={styles.contentWrapper}>
-        <h1>LET'S WORK TOGETHER</h1>
+        <h1>{language ? "LET'S WORK TOGETHER" : "ENTRE EM CONTATO"}</h1>
 
         <div className={styles.socialLinks}>
           <a href="https://www.linkedin.com/in/bruno-gomes-bsg97/" target="_blank">

@@ -7,7 +7,7 @@ const initialState = {
 
 export const showStartSlice = createSlice({
   initialState,
-  name: "showCart",
+  name: "showStartState",
   reducers: {
     hideStart: (state) => {
       state.isShowStart = false
@@ -19,4 +19,4 @@ export const showStartSlice = createSlice({
   }
 })
 
-export const {hideStart, showStart } = showStartSlice.actions
+export const { hideStart, showStart } = showStartSlice.actions
