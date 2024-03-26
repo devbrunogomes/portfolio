@@ -64,7 +64,33 @@
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly;    
+
+    /* Create View Timeline */
+    view-timeline-name: scroll(block);
+    view-timeline-axis: block;
+
+    /* Attach animation, linked to the  View Timeline */
+    animation: linear revealC both;
+    animation-timeline: scroll(block);
+
+    /* Tweak range when effect should run*/
+    animation-range: cover 0% cover 100%;
+
+    @keyframes revealC {
+      from {
+        opacity: 0;
+        // clip-path: inset(45% 70% 45% 70%);
+        // width: 50%;
+        transform: translateX(-300rem);
+      }
+      to {
+        opacity: 1;
+        // clip-path: inset(0% 0% 0% 0%);
+        // width: 100%;
+        transform: translateX(0rem);
+      }
+    }
 
     @media screen and (max-width: 900px) {
       justify-content: center;
@@ -96,7 +122,7 @@
         text-decoration: none;
         color: var(--inside-title-color);
         font-size: 5rem;
-        font-weight: 200;        
+        font-weight: 200;
         width: 10rem;
         height: 10rem;
         display: flex;
