@@ -15,7 +15,7 @@ export const Projects = (props) => {
           <FaFileCode />
         </div>
 
-        <h1>PROJECTS</h1>
+        <h1>{language ? "PROJECTS" : "PROJETOS"}</h1>
       </div>
       {projectData.map((project) => {
         return (

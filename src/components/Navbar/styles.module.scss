@@ -18,12 +18,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow-x: hidden;
 
-    @media screen and (max-width: 420px) {
-      justify-content: space-around;
+    @media screen and (max-width: 520px) {
+      justify-content: space-evenly;
     }
 
-    div {
+    div:nth-of-type(1) {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -32,16 +33,29 @@
       h2 {
         font-size: 2rem;
         font-family: var(--body-font-family);
+
+        @media screen and (max-width: 520px) {
+          font-size: 1.7rem;
+        }
       }
 
       svg {
         font-size: 3rem;
+
+        @media screen and (max-width: 520px) {
+          display: none;
+        }
       }
     }
 
     div:nth-of-type(2) {
       display: flex;
+      align-items: center;
       gap: 1.5rem;
+
+      @media screen and (max-width: 520px) {
+        gap: 1rem;
+      }
       
 
       button {
@@ -58,6 +72,10 @@
           filter: brightness(120%);
           transition: filter 0.2s ease-in-out;
         }
+
+        @media screen and (max-width: 520px) {
+          font-size: 1rem;
+        }
       }
     }
 
@@ -67,7 +85,7 @@
       list-style: none;
       font-family: var(--body-font-family);
 
-      @media screen and (max-width: 420px) {
+      @media screen and (max-width: 520px) {
         gap: 1rem;
       }
 
@@ -81,6 +99,10 @@
         &:hover {
           filter: brightness(150%);
           transition: filter 0.5s ease-in-out;
+        }
+
+        @media screen and (max-width: 520px) {
+          font-size: 1.4rem;
         }
       }
     }

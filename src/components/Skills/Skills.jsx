@@ -16,7 +16,7 @@ export const Skills = (props) => {
   return (
     <section id={props.id} className={styles.container}>
       <div className={styles.title}>
-        <h1>SKILLS </h1>
+        <h1>{language ? "SKILLS" : "HABILIDADES"} </h1>
 
         <div className={styles.iconTitle}>
           <GiEnergyArrow />

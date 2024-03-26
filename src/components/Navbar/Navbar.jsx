@@ -38,16 +38,16 @@ export const Navbar = () => {
 
           <ul>
             <li>
-              <a href="#aboutInfo">About</a>
+              <a href="#aboutInfo">{language ? "About" : "Sobre"}</a>
             </li>
             <li>
-              <a href="#skills">Skills</a>
+              <a href="#skills">{language ? "Skills" : "Habilidades"}</a>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <a href="#projects">{language ? "Projects" : "Projetos"}</a>
             </li>
             <li>
-              <a href="#contacts">Contacts</a>
+              <a href="#contacts">{language ? "Contacts" : "Contatos"}</a>
             </li>
           </ul>
 

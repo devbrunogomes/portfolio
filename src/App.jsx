@@ -12,7 +12,6 @@ import store from './store';
 function App() {
   return (
     <Provider store={store}>
-
     <main>
       <Navbar/>
       <About id="about"/>
