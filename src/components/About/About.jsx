@@ -2,6 +2,8 @@ import styles from "./styles.module.scss";
 import fotoPerfil from "../../assets/foto-perfil.jpeg";
 import { BsFileEarmarkPerson } from "react-icons/bs";
 import { GrDocumentDownload } from "react-icons/gr";
+import { FaRegFilePdf } from "react-icons/fa";
+
 import { useDispatch, useSelector } from "react-redux";
 import { toggleLanguage } from "../../redux/LanguageReducer/languageSlice";
 import { showStartSlice } from "../../redux/LanguageReducer/showStartSlice";
@@ -49,7 +51,8 @@ export const About = (props) => {
                 target="_blank"
               >
                 <span>
-                  Curriculo <GrDocumentDownload />
+                  CV <FaRegFilePdf />
+
                 </span>
               </a>
             </div>
@@ -65,14 +68,11 @@ export const About = (props) => {
 
           <p>
             {" "}
-            <span>Olá,</span>
-            <br /> Estou à procura de minha primeira oportunidade no mundo da
-            programação, onde eu consiga colocar em prática meus conhecimentos
-            em HTML, CSS, Javascript e React, afim de desenvolver interfaces de
-            usuário que sejam eficientes, interativas e responsivas. Me sinto
-            extremamente motivado a integrar uma equipe dinámica e ágil,
-            contribuindo de forma ativa, ao passo que aprimoro meus
-            conhecimentos de acordo com as experiências práticas.
+            <span>{language ? "Hello," : "Olá,"}</span>
+            <br />{" "}
+            {language
+              ? "I'm Bruno, 26 years old, and I recently embarked on this journey into the world of programming. I consider myself a creative, dedicated, and self-motivated person. I love sitting at the computer and bringing my ideas to life through the tools I have, which today are HTML, CSS, Javascript, and React. Often, I encounter challenges, which only motivates me further to find new paths and acquire new skills. My mission is to solve problems and make life a little simpler through technology."
+              : "Eu sou Bruno, tenho 26 anos, e há pouco tempo embarquei nessa jornada no mundo da programação. Me considero uma pessoa criativa, compromissada e auto motivada. Adoro sentar no computador e colocar em prática minhas ideias através das ferramentas que eu tenho, que hoje são HTML, CSS, Javascript e React. Diversas vezes eu encontro um desafio, o que só me deixa mais motivado a encontrar novos caminhos e adquirir novas habilidades. Minha missão é resolver problemas e deixar a vida um pouco mais simples, através da tecnologia. "}
           </p>
         </div>
       </div>

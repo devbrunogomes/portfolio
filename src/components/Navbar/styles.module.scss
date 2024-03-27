@@ -67,6 +67,7 @@
         font-family: var(--body-font-family);
         background-color: var(--inside-title-color);
         transition: filter 0.2s ease-in-out;
+        cursor: pointer;
 
         &:hover {
           filter: brightness(120%);
