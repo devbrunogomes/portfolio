@@ -3,12 +3,12 @@ import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 
-export const projectData = [
+export const projectDataEn = [
   {
     id: 1,
     title: "OnFocus",
     description:
-      "As vezes manter o foco pode ser difícil, por isso, essa aplicação foi pensada para poder cronometrar o tempo que o usuário deve passar focado, e o tempo que deve descansar, pois a vida é um constante equilibrio, não é mesmo?",
+      "Sometimes, maintaining focus can be challenging. That's why this application was designed to allow users to time their focused work sessions and breaks, because life is all about finding that balance, isn't it?",
     stack: "React, Vercel",
     image: project1,
     site: "https://onfocus-timer.vercel.app/",
@@ -19,7 +19,7 @@ export const projectData = [
     id: 2,
     title: "To Do List",
     description:
-      "Pensando em produtividade, nada melhor que uma lista de tarefas. O insere uma tarefa a ser cumprida, a aplicação exibe informações como tarefas concluídas e pendentes. Cada tarefa pode ser marcada como concluída, excluída, sendo tudo funcional.",
+      "When it comes to productivity, nothing beats a to-do list. You input a task to be completed, and the application displays information such as completed and pending tasks. Each task can be marked as completed or deleted, making everything fully functional.",
     stack: "React, Typescript, SCSS, Vercel",
     image: project4,
     site: "https://todolistbsg.vercel.app/",
@@ -31,7 +31,7 @@ export const projectData = [
     id: 3,
     title: "AtmosView",
     description:
-      "Aplicação feita para consultar o clima de qualquer lugar do mundo. Consome uma API externa para trazer as informações da localidade inserida pelo usuário, exbindo-as dinamicamente.",
+      "An application made to check the weather of any place in the world. It consumes an external API to fetch information about the location entered by the user, displaying it dynamically.",
     stack: "Javascript Vanilla, Typescript, Vercel",
     image: project3,
     site: "https://atmosview-bsg.vercel.app/",
@@ -43,7 +43,7 @@ export const projectData = [
     id: 4,
     title: "ForYou Shop",
     description:
-      "Essa é uma página de e-commerce fake, utilizando uma base de dados de uma API de produtos fakes. Possuindo um carrinho de compras funcional onde é possivel remover os produtos, ver o total e esvaziar o carrinho",
+      "This is a fake e-commerce page, utilizing a database from a fake product API. It features a functional shopping cart where users can remove products, view the total, and empty the cart.",
     stack: "React, Redux, Styled Components, Vercel",
     image: project2,
     site: "https://foryoushop.vercel.app/",

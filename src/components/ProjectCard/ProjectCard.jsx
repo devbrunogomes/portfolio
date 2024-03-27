@@ -32,10 +32,10 @@ export const ProjectCard = (props) => {
 
             <div className={styles.links}>
               <a href={props.site} target="_blank" id={styles.visitSite}>
-                 <span>Visit Site</span>
+                 <span>{language ? "Visit Site" : "Visitar Site"}</span>
               </a>
               <a href={props.github} target="_blank">
-                Go To GitHub
+                {language ? "Go to Github" : "Ir ao Github"}
               </a>
             </div>
           </div>
