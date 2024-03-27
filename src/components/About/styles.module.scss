@@ -135,6 +135,10 @@
         }
       }
 
+      a {
+        text-decoration: none;
+      }
+
       .downloadCV {
         text-decoration: none;
         color: var(--title-font-color);
@@ -177,9 +181,7 @@
           color: var(--title-font-color);
         }
 
-        a {
-          text-decoration: none;
-        }
+        
 
         span {
           background-color: none;

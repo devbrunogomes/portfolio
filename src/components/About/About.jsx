@@ -45,17 +45,20 @@ export const About = (props) => {
             <h2>GOMES</h2>
             <hr />
             <h3>DEV FRONTEND</h3>
+            <a href="https://drive.google.com/file/d/1ciCbSlOgc_f0q03QHVxMVs7BT8rl12Y_/view?usp=sharing" target="_blank" >
+
             <div className={styles.downloadCV}>
-              <a
+              {/* <a
                 href="https://drive.google.com/file/d/1ciCbSlOgc_f0q03QHVxMVs7BT8rl12Y_/view?usp=sharing"
                 target="_blank"
-              >
+              > */}
                 <span>
                   CV <FaRegFilePdf />
 
                 </span>
-              </a>
+              {/* </a> */}
             </div>
+            </a>
           </div>
           <div className={styles.imagem}>
             <img src={fotoPerfil} alt="" loading="lazy" />
